@@ -172,8 +172,12 @@ body {
   font-family: Futura;
   color: white;
   background-color: transparent;
-}
 
+  animation-duration: 5s;
+}
+.button{
+  
+}
 #bold{
   font-weight: bold;
 }

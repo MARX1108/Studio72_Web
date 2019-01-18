@@ -13,6 +13,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./index/cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
   </head>
 
@@ -21,11 +22,11 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       
       <div class = "inner-cover">
-          <p id="First">STUDIO 72</p>
-          <p id="Second">LIVING THE ARTS</p>
-          <p id = "Button"> 
+          <p id="First" class = "text">STUDIO 72</p>
+          <p id="Second" class = "text2">LIVING THE ARTS</p>
+          <p id = "Button" class = "text"> 
               <!--<button type="button" class="btn btn-default" onclick="location.href = 'https://marx1108.github.io/';">PROJECTS.</button>-->
-              <button type="button" class="btn btn-default" onclick="location.href = 'https://marx1108.github.io/';">EVENTS.</button>
+              <button type="button" class="btn btn-default animated slow pulse delay-2s" onclick="location.href = 'https://marx1108.github.io/';">EVENTS.</button>
               <button type="button" class="btn btn-default" onclick="location.href = 'https://marx1108.github.io/2019/01/17/hello-world/';">CONTACTS.</button>
           </p>
       </div>
@@ -42,6 +43,11 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./index/popper.min.js"></script>
     <script src="./index/bootstrap.min.js"></script>
-  
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.text', {duration: 2500});
+        ScrollReveal().reveal('.text2', {delay: 800});
+
+    </script>
 
 </body></html>
