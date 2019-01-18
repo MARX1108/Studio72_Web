@@ -26,11 +26,40 @@ a:hover {
 
 html,
 body {
+  
   height: 100%;
-  background: url(background.png)no-repeat center center fixed;
+  background: url(image.png)no-repeat center center fixed;
   background-color: #030014;
   background-size:80%;
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 20s;
 }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {filter: hue-rotate(0deg);}
+  25%  {filter: hue-rotate(90deg);}
+  50%  {filter: hue-rotate(180deg);}
+  75%  {filter: hue-rotate(270deg);}
+  100% {filter: hue-rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {filter: hue-rotate(0deg);}
+  25%  {filter: hue-rotate(90deg);}
+  50%  {filter: hue-rotate(180deg);}
+  75%  {filter: hue-rotate(270deg);}
+  100% {filter: hue-rotate(360deg);}
+}
+
+
+
+
+
 
 body {
   display: -ms-flexbox;
@@ -117,12 +146,12 @@ body {
   margin-top: 130%;
   padding-top: 200%;
   font-weight: bold;
-
 }
 
 #lead{
   font-family: Futura;
-  letter-spacing:4.6px;
+  position: center;
+  letter-spacing:4.8px;
   background: linear-gradient(to left, #00ffff, #1d0074);
   -webkit-background-clip: text;
   color: transparent;
@@ -136,7 +165,12 @@ body {
 }
 
 .btn{
+  font-size: 17px;
   font-family: Futura;
   color: white;
   background-color: transparent;
+}
+
+#bold{
+  font-weight: bold;
 }
