@@ -26,12 +26,12 @@ a:hover {
 
 html,
 body {
-  
+  font-size: 62.5%;
   height: 100%;
-  background: url(image.png)no-repeat center center fixed;
+  background: url(image2.png)no-repeat center center fixed;
   background-color: #030014;
   background-size:80%;
-
+  background-position-y: 0.2vw;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
   animation-name: example;
@@ -140,32 +140,35 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
-#cover-heading{
-  font-size: 2.5em;
-  position: center;
-  margin-top: 130%;
-  padding-top: 200%;
+.inner-cover{
+  position: relative;
+  top:80%;
+}
+#First{
+  position: relative;
+  right: 0.25vw;
+  font-size: 3vw;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
-#lead{
+#Second{
+  font-size: 1vw;
   font-family: Futura;
-  position: center;
-  letter-spacing:4.8px;
+  letter-spacing:0.48vw;
   background: linear-gradient(to left, #00ffff, #1d0074);
   -webkit-background-clip: text;
   color: transparent;
 }
-#word{
+#Button{
+  font-size: 0.5vw;
+  margin-top: 2vh;
   white-space:nowrap;
-}
-@font-face{
-  font-family: 'Futura';
-  src : url('Futura.ttc');
 }
 
 .btn{
-  font-size: 17px;
+  font-size: 1.3vw;
+  letter-spacing: 0.1vw;
   font-family: Futura;
   color: white;
   background-color: transparent;
@@ -174,3 +177,61 @@ body {
 #bold{
   font-weight: bold;
 }
+
+@font-face{
+  font-family: 'Futura';
+  src : url('Futura.ttc');
+}
+
+@media (max-width: 600px) {
+
+  html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  background: url(image2.png)no-repeat center center fixed;
+  background-color: #030000;
+  background-size:110%;
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 20s;
+}
+
+  .inner-cover{
+    position: relative;
+    top:70%;
+  }
+
+  #First{
+    font-size: 8.5vw;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  #Second{
+    top: 50%;
+    font-size: 4vw;
+    font-family: Futura;
+    letter-spacing:0.7vw;
+    background: linear-gradient(to left, #00ffff, #1d0074);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  #Button{
+    font-size: 0.5vw;
+    margin-top: 1vh;
+    white-space:nowrap;
+  }
+
+  .btn{
+    font-size: 3.6vw;
+    letter-spacing: 0.3vw;
+    font-family: Futura;
+    color: white;
+    background-color: transparent;
+  }
+}
+
