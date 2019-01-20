@@ -173,11 +173,15 @@ body {
   color: white;
   background-color: transparent;
 
-  animation-duration: 5s;
-}
-.button{
   
 }
+
+.btn:hover{
+  background: linear-gradient(to left, #00ffff, #1d0074);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 #bold{
   font-weight: bold;
 }
@@ -237,5 +241,7 @@ body {
     color: white;
     background-color: transparent;
   }
+
+  
 }
 
