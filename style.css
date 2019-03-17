@@ -1,0 +1,16 @@
+#background{
+    color:#030014;
+    background: url(background.png)no-repeat center center fixed;
+    background-attachment:fixed;
+    background-position: center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#title{
+    width: 10%;
+    border: 10%;
+    margin:10%;
+    padding: 10%;
+}

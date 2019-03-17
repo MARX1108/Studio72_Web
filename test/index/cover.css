@@ -1,0 +1,258 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #030014;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+ 
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.outer-cover{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.background{
+  background: url(image2.png)no-repeat center center fixed;
+  background-size:80%;
+  background-position-y: 0.2vw;
+}
+
+.anima{
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 20s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {filter: hue-rotate(0deg);}
+  25%  {filter: hue-rotate(90deg);}
+  50%  {filter: hue-rotate(180deg);}
+  75%  {filter: hue-rotate(270deg);}
+  100% {filter: hue-rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {filter: hue-rotate(0deg);}
+  25%  {filter: hue-rotate(90deg);}
+  50%  {filter: hue-rotate(180deg);}
+  75%  {filter: hue-rotate(270deg);}
+  100% {filter: hue-rotate(360deg);}
+}
+
+
+.inner-cover{
+  position: relative;
+  top:80%;
+}
+#First{
+  width: 15vw;
+  position: center relative;
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#Second{
+  font-size: 1vw;
+  font-family: Futura;
+  letter-spacing:0.48vw;
+  background: linear-gradient(to left, #00ffff, #1d0074);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#Button{
+  font-size: 0.5vw;
+  margin-top: 2vh;
+  white-space:nowrap;
+}
+
+.btn{
+  font-size: 1.3vw;
+  letter-spacing: 0.1vw;
+  font-family: Futura;
+  color: white;
+  background-color: transparent;
+
+  
+}
+
+.btn:hover{
+  background: linear-gradient(to left, #00ffff, #1d0074);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#bold{
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'Futura';
+  src : url('Futura.ttc');
+}
+
+@media (max-width: 600px) {
+
+  html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  background: url(image2.png)no-repeat center center fixed;
+  background-color: #030000;
+  background-size:110%;
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 20s;
+}
+
+  .inner-cover{
+    position: relative;
+    top:70%;
+  }
+
+  #First{
+    font-size: 8.5vw;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  #Second{
+    top: 50%;
+    font-size: 4vw;
+    font-family: Futura;
+    letter-spacing:0.7vw;
+    background: linear-gradient(to left, #00ffff, #1d0074);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  #Button{
+    font-size: 0.5vw;
+    margin-top: 1vh;
+    white-space:nowrap;
+  }
+
+  .btn{
+    font-size: 3.6vw;
+    letter-spacing: 0.3vw;
+    font-family: Futura;
+    color: white;
+    background-color: transparent;
+  }
+
+  
+}
+
+
+
